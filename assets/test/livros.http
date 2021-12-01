@@ -1,8 +1,10 @@
-GET https://8080-beige-panther-9pl3bjmg.ws-us18.gitpod.io/filmes
+@url = https://8080-rose-urial-q8qj44x4.ws-us20.gitpod.io
+###
+GET {{url}}/filmes
 
 ###
 
-POST https://8080-beige-panther-9pl3bjmg.ws-us18.gitpod.io/filmes
+POST https://8080-rose-urial-q8qj44x4.ws-us20.gitpod.io/filmes
 Content-Type: application/json
 
 {
@@ -10,9 +12,17 @@ Content-Type: application/json
 }
 
 ###
-PUT https://8080-beige-panther-9pl3bjmg.ws-us18.gitpod.io/filmes/5
+PUT https://8080-rose-urial-q8qj44x4.ws-us20.gitpod.io/filmes/5
 Content-Type: application/json
 
 {
     "titulo" : "Ghostbusters"
+}
+
+###
+DELETE https://8080-rose-urial-q8qj44x4.ws-us20.gitpod.io/filmes
+Content-Type: application/json
+
+{
+    "id" : 5
 }
